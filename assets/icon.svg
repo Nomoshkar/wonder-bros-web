@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Super Wonder Bros question block">
+  <rect width="64" height="64" rx="12" fill="#20203c"/>
+  <rect x="7" y="7" width="50" height="50" rx="5" fill="#b97825"/>
+  <rect x="10" y="10" width="44" height="44" rx="3" fill="#ffcc3d"/>
+  <path d="M10 15h44v5H10z" fill="#fff09a"/>
+  <g fill="#9b5e20"><rect x="14" y="14" width="5" height="5"/><rect x="45" y="14" width="5" height="5"/><rect x="14" y="45" width="5" height="5"/><rect x="45" y="45" width="5" height="5"/></g>
+  <path d="M25 17h14v7h-5v5h5v7h6v11H19V36h6v-7h5v-5h-5z" fill="#9b5e20"/>
+</svg>

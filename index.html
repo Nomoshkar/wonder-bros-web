@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#081426">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Super Wonder Bros — a modern five-world platform adventure with keyboard, gamepad and touch controls.">
+    <meta name="application-name" content="Super Wonder Bros">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="Super Wonder Bros">
+    <meta property="og:description" content="Choose a hero and play through five handcrafted worlds.">
+    <meta property="og:type" content="website">
+    <title>Super Wonder Bros</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "phaser": "./phaser.esm.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="game-container"></div>
+    <noscript>
+        <div class="wb-noscript">
+            <h1>Super Wonder Bros</h1>
+            <p>JavaScript is required to play. Enable it in your browser, then reload this page.</p>
+        </div>
+    </noscript>
+    <script>
+        // If the module itself cannot load, do not leave a permanent blank screen.
+        window.__wbLoadTimer = window.setTimeout(function () {
+            if (window.gameUI) return;
+            var message = document.createElement('div');
+            message.className = 'wb-noscript wb-load-failure';
+            message.setAttribute('role', 'alert');
+            message.innerHTML = '<h1>Super Wonder Bros</h1><p>The game could not load. Check your connection and enable JavaScript, then reload this page.</p>';
+            document.body.append(message);
+        }, 15000);
+    </script>
+    <script type="module" src="game.js?v=3"></script>
+</body>
+</html>

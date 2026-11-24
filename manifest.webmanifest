@@ -1,0 +1,19 @@
+{
+  "name": "Super Wonder Bros",
+  "short_name": "Wonder Bros",
+  "description": "A modern five-world platform adventure.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#050d1b",
+  "theme_color": "#081426",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
